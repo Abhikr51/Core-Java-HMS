@@ -2,6 +2,7 @@
 
 ## Design 
 - Doctor
+    - login [Shows some list of doctors]
     - Show appointments :
         - AID
         - name
