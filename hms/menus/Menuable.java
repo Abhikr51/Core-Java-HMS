@@ -1,5 +1,5 @@
 package hms.menus;
 
 public interface Menuable {
-    public void start();
+    public void show();
 }

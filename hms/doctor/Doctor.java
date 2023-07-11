@@ -3,6 +3,15 @@ package hms.doctor;
 import java.util.ArrayList;
 
 public class Doctor {
+    private int age;
+    private String gender;
+    private String email;
+    private String password;
+    private String Qualification;
+    ArrayList<String> treatment = new ArrayList<>();
+    private String specialization;
+
+    
     private String name;
 
     public String getEmail() {
@@ -21,13 +30,6 @@ public class Doctor {
         this.password = password;
     }
 
-    private int age;
-    private String gender;
-    private String email;
-    private String password;
-    private String Qualification;
-    ArrayList<String> treatment = new ArrayList<>();
-    private String specialization;
 
     public String getName() {
         return name;

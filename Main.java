@@ -10,7 +10,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         try {
             DoctorList.initialize();
-            System.out.println(DoctorList.getDoctorList().get(0));
+            // System.out.println(DoctorList.getDoctorList().get(1));
             final int endChoice = 0;
             int choice = endChoice;
             do {
@@ -24,12 +24,12 @@ public class Main {
                 switch (choice) {
                     case 1:
                         DoctorMenu dm = new DoctorMenu();
-                        dm.start();
+                        dm.show();
                         break;
 
                     case 2:
                         PatientMenu pm = new PatientMenu();
-                        pm.start();
+                        pm.show();
                         break;
 
                     case endChoice:
@@ -40,8 +40,8 @@ public class Main {
                         System.out.println("Invalid choice try again");
                 }
             } while (choice != endChoice);
-        } catch (Exception ex) {
-            System.out.println("Something went wrong" + ex.getMessage());
+        } catch (NullPointerException ex) {
+            System.out.println("Something went wrong : " + ex.getMessage());
         } finally {
             sc.close();
         }
