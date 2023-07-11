@@ -1,8 +1,10 @@
 package hms.menus;
 
-public class PatientMenu implements Menuable {
+import hms.menus.Menuable;
 
-    public void start(){
-        
-    };
+public class PatientMenu implements Menuable {
+    public void start() {
+
+    }
+
 }

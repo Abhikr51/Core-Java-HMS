@@ -1,47 +1,50 @@
 import java.util.Scanner;
 
+import hms.doctor.DoctorList;
 import hms.menus.DoctorMenu;
+import hms.menus.PatientMenu;
 import hms.util.Line;
 
-
-public class Main{
+public class Main {
     public static void main(String[] args) {
-        //starting point
-        Scanner sc = new Scanner(System.in); 
+        Scanner sc = new Scanner(System.in);
         try {
+            DoctorList.initialize();
+            System.out.println(DoctorList.getDoctorList().get(0));
             final int endChoice = 0;
             int choice = endChoice;
-            do{
-    
+            do {
                 Line.horizontalLine();
                 System.out.println("1 -> Doctor Panel");
                 System.out.println("2 -> Patient Panel");
                 System.out.println("0 -> Exit");
                 Line.horizontalLine();
-                System.out.print("Please choose any one : ");
+                System.out.print("Please enter any one :");
                 choice = sc.nextInt();
-                switch(choice){
-                    case 1: 
+                switch (choice) {
+                    case 1:
                         DoctorMenu dm = new DoctorMenu();
                         dm.start();
                         break;
-                    case 2: 
-                        DoctorMenu pm = new DoctorMenu();
+
+                    case 2:
+                        PatientMenu pm = new PatientMenu();
                         pm.start();
                         break;
-                    case endChoice: 
-                        System.out.println("Thank you for using our System");
+
+                    case endChoice:
+                        System.out.println("Thanku for using our system");
                         break;
-                       
-                    default :
-                        System.out.println("Invalid Choice Try again");
+
+                    default:
+                        System.out.println("Invalid choice try again");
                 }
-            }while(choice != endChoice);
-    
-        } catch (Exception e) {
-            System.err.println("Somthing went wrong : " + e.getMessage());
-        }finally{
+            } while (choice != endChoice);
+        } catch (Exception ex) {
+            System.out.println("Something went wrong" + ex.getMessage());
+        } finally {
             sc.close();
         }
     }
+
 }
