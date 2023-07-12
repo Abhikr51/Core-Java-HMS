@@ -18,9 +18,8 @@ public class PatientMenu implements Menuable {
             System.out.println("1 -> Book Appointment");
             System.out.println("2 -> View Appointment");
             System.out.println("3 -> Cancel Appointment");
-            System.out.println("4 -> View Medicines");
-            System.out.println("4 -> Logout");
-            System.out.println("0 -> Exit");
+            // System.out.println("4 -> View Medicines");
+            System.out.println("0 -> Logout");
             Line.horizontalLine();
             System.out.print("Please enter any one :");
             choice = sc.nextInt();
@@ -64,6 +63,8 @@ public class PatientMenu implements Menuable {
                     }
                     break;
                 case endChoice:
+                    LocalDB.logoutPatient(); 
+                    System.out.println("Logout Successfully");
                     break;
 
                 default:

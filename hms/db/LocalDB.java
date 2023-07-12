@@ -87,4 +87,10 @@ public class LocalDB {
         }
         return false;
     }
+    public static void logoutPatient(){
+        patientData = null;
+    }
+    public static void logoutDoctor(){
+        doctorData = null;
+    }
 }

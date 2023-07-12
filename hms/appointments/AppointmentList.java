@@ -45,10 +45,10 @@ public class AppointmentList {
     public static Appointment get_AppointmentByPatient() {
         Iterator<Appointment> itr = list.iterator();
         while (itr.hasNext()) {
-            if(LocalDB.getPatientData().getPid() == itr.next().getPid()){
-                return itr.next();
+            Appointment a = itr.next();
+            if(LocalDB.getPatientData().getPid() == a.getPid()){
+                return a;
             }
-            itr.next();
         }
         return null;
 
@@ -56,10 +56,10 @@ public class AppointmentList {
     public static boolean hasBookingByPatient() {
         Iterator<Appointment> itr = list.iterator();
         while (itr.hasNext()) {
-            if(LocalDB.getPatientData().getPid() == itr.next().getPid()){
+            Appointment a = itr.next();
+            if(LocalDB.getPatientData().getPid() == a.getPid()){
                 return true;
             }
-            itr.next();
         }
         return false;
 
