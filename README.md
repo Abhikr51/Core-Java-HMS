@@ -1,5 +1,17 @@
 # Hospital Management System
 
+## Features
+- Doctor
+    - Login
+    - Can view appointments.
+    - Can approve or reject appointments.
+    - Put Medicines for patient.
+- Patient
+    - Login & Register.
+    - Can book appointments.
+    - Can view booked appointments.
+    - Can Medicines given by Doctor.
+
 ## Design 
     |── Doctor
         |── Show appointments :
