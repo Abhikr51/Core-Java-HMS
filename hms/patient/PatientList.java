@@ -3,6 +3,7 @@ package hms.patient;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import hms.doctor.Doctor;
 import hms.util.Line;
 
 public class PatientList {
@@ -29,6 +30,20 @@ public class PatientList {
             return false;
         }
     };
+
+    public static void initialize() {
+        Patient p1 = new Patient();
+        p1.setEmail("pa1@gmail.com");
+        p1.setPassword("pa1@123");
+        p1.setPid(1);
+        list.add(p1);
+        Patient p2 = new Patient();
+        p2.setEmail("pa2@gmail.com");
+        p2.setPassword("pa2@123");
+        p2.setPid(2);
+        list.add(p2);
+
+    }
 
     public static ArrayList<Patient> getPatientList() {
         return list;

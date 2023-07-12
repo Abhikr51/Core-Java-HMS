@@ -18,7 +18,7 @@ public class PatientMenu implements Menuable {
             System.out.println("1 -> Book Appointment");
             System.out.println("2 -> View Appointment");
             System.out.println("3 -> Cancel Appointment");
-            // System.out.println("4 -> View Medicines");
+            System.out.println("4 -> View Medicines");
             System.out.println("0 -> Logout");
             Line.horizontalLine();
             System.out.print("Please enter any one :");
@@ -59,11 +59,20 @@ public class PatientMenu implements Menuable {
                     if (AppointmentList.cancel_appointmentByPatient()) {
                         Label.h_label("Appointment cancelled Successfully");
                     } else {
-                        Label.h_label("No Appointmenrts to cancel");
+                        Label.h_label("No Appointments to cancel");
                     }
                     break;
+
+                case 4:
+                    if (AppointmentList.getMedicinesForPatient()) {
+
+                    } else {
+                        Label.h_label("No Medicines Found");
+                    }
+                    break;
+
                 case endChoice:
-                    LocalDB.logoutPatient(); 
+                    LocalDB.logoutPatient();
                     System.out.println("Logout Successfully");
                     break;
 

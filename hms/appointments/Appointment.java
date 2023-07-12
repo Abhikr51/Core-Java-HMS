@@ -13,13 +13,14 @@ public class Appointment {
     private int age;
     private String comment;
     private String a_date;
-    private HashMap<String,String> medicine = new HashMap<>();
+    private HashMap<String, String> medicine = new HashMap<>();
     private State status = State.PENDING;
 
-    public Appointment(int pid, int aid, String name, String issue, String gender, int age, String comment,String a_date) {
+    public Appointment(int pid, int aid, String name, String issue, String gender, int age, String comment,
+            String a_date) {
         this.pid = pid;
         this.aid = aid;
-        this.name = name; 
+        this.name = name;
         this.issue = issue;
         this.gender = gender;
         this.age = age;
@@ -28,7 +29,7 @@ public class Appointment {
     }
 
     // setters and getters
-    
+
     public State getStatus() {
         return status;
     }
@@ -99,6 +100,14 @@ public class Appointment {
 
     public void setA_date(String a_date) {
         this.a_date = a_date;
+    }
+
+    public HashMap<String, String> getMedicine() {
+        return medicine;
+    }
+
+    public void setMedicine(String mdcnName, String mdcnValue) {
+        medicine.put(mdcnName, mdcnValue);
     }
 
 }
