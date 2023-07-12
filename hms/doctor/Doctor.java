@@ -82,7 +82,8 @@ public class Doctor {
     }
 
     public String toString() {
-        return "Name : " + name + "\n" + "Age : " + age + "\n" + "Gender : " + gender + "\n" + "Specialization :"
+        return "Name : " + name + "\n" + "Age : " + age + "\n" + "Gender : " + gender + "\n" + "Qualification :"
+                + Qualification + "Specialization :"
                 + specialization + "\n" + "Treatment : " + treatment.toString();
     }
 

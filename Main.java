@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 import hms.doctor.DoctorList;
 import hms.menus.DoctorMenu;
-import hms.menus.PatientMenu;
+import hms.menus.PatientAuthMenu;
 import hms.util.Line;
 
 public class Main {
@@ -28,7 +28,7 @@ public class Main {
                         break;
 
                     case 2:
-                        PatientMenu pm = new PatientMenu();
+                        PatientAuthMenu pm = new PatientAuthMenu();
                         pm.show();
                         break;
 
@@ -40,7 +40,8 @@ public class Main {
                         System.out.println("Invalid choice try again");
                 }
             } while (choice != endChoice);
-        } catch (NullPointerException ex) {
+        } 
+        catch (NullPointerException ex) {
             System.out.println("Something went wrong : " + ex.getMessage());
         } finally {
             sc.close();

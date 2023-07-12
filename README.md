@@ -2,17 +2,16 @@
 
 ## Design 
 - Doctor
-    -login
-        - Show appointments :
-            - AID
-            - name
-            - Issue
-            - gender (Male / Female / Prefer not to say)
-            - Age
-            - Comment
-            - Appointment Date (DD/MM/YYYY)
-        - Update Appointments :[ get appointment id and chanege status -> status can be (completed/rejected / accepted) ]
-        - Put medicines  : (AID -> if status == completed) 
+    - Show appointments :
+        - AID
+        - name
+        - Issue
+        - gender (Male / Female / Prefer not to say)
+        - Age
+        - Comment
+        - Appointment Date (DD/MM/YYYY)
+    - Update Appointments :[ get appointment id and chanege status -> status can be (completed/rejected / accepted) ]
+    - Put medicines  : (AID -> if status == completed) 
 - Patient
     - login
     - Registration: [Get registration details]

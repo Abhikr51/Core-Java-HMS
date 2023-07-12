@@ -22,8 +22,10 @@ public class LocalDB {
     public static boolean setAuth(String type) {
 
         switch (type) {
-            case "doctor":  return doctorLogin();
-            case "patient": return patientLogin();
+            case "doctor":
+                return doctorLogin();
+            case "patient":
+                return patientLogin();
 
             default:
                 System.out.println("Invalid type passed");
@@ -36,12 +38,13 @@ public class LocalDB {
     public static Doctor getDoctorData() {
         return doctorData;
     }
+
     public static Patient getPatientData() {
         return patientData;
     }
 
     // public static void setDoctorData(Doctor doctorData) {
-    //     LocalDB.doctorData = doctorData;
+    // LocalDB.doctorData = doctorData;
     // }
 
     public static boolean patientLogin() {
@@ -56,7 +59,7 @@ public class LocalDB {
         while (itr.hasNext()) {
             Patient patient = itr.next();
             if (patient.getEmail().equals(email) && patient.getPassword().equals(password)) {
-                auth = "doctor";
+                auth = "patient";
                 patientData = patient;
                 return true;
             }
