@@ -12,7 +12,21 @@
     - Can view booked appointments.
     - Can Medicines given by Doctor.
 
-## Design 
+
+## How to Run Project
+
+- **Step 1 :** Clone Project
+- **Step 2 :** Make sure you have installed jdk properly .
+- **Step 3 :** navigate to folder directory.
+- **Step 4 :** Run these commands to start .
+
+    ```bash
+    javac Main.java
+    java Main
+    ```
+
+
+## Program Flow 
     |── Doctor
         |── Show appointments :
             ─ AID
@@ -78,4 +92,47 @@
 
 ## Screenshots
 
-![Starting Panel](https://raw.githubusercontent.com/Abhikr51/Core-Java-HMS/main/hms/screenshots/Starting-Panel.png "Starting Panel")
+#### Starting Panel
+![Starting Panel](https://raw.githubusercontent.com/Abhikr51/Core-Java-HMS/main/hms/screenshots/Starting-Panel.png)
+---
+#### Patient Auth Panel
+![Patient Auth Panel](https://raw.githubusercontent.com/Abhikr51/Core-Java-HMS/main/hms/screenshots/Patient-authentication.png)
+---
+#### Patient Menu
+![Patient Menu](https://raw.githubusercontent.com/Abhikr51/Core-Java-HMS/main/hms/screenshots/Patient-Menu.png)
+---
+#### Appointment Booking
+![Appointment Booking](https://raw.githubusercontent.com/Abhikr51/Core-Java-HMS/main/hms/screenshots/book-appointment.png)
+---
+#### View Medicines
+![View Medicines](https://raw.githubusercontent.com/Abhikr51/Core-Java-HMS/main/hms/screenshots/view-medicines-from-patient.png)
+---
+#### Doctor Panel
+![Doctor Panel](https://raw.githubusercontent.com/Abhikr51/Core-Java-HMS/main/hms/screenshots/doctor-panel.png)
+---
+#### Showing All appointments for doctor.
+![Showing All appointments for doctor.](https://raw.githubusercontent.com/Abhikr51/Core-Java-HMS/main/hms/screenshots/doctor-view-all-bookings.png)
+---
+#### Putting Medicines to patient
+![Putting Medicines to patient](https://raw.githubusercontent.com/Abhikr51/Core-Java-HMS/main/hms/screenshots/put-medicines.png)
+---
+
+## Badges
+
+Add badges from somewhere like: [shields.io](https://shields.io/)
+
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
+[![AGPL License](https://img.shields.io/badge/license-AGPL-blue.svg)](http://www.gnu.org/licenses/agpl-3.0)
+
+
+## 🚀 About Me
+I'm a full stack developer working in MERN Stack.
+
+
+
+
+## 🔗 Links
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://abhikr51.github.io/portfolio/)
+
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abhijit-kumar-708b53192/)
