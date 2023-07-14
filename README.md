@@ -89,6 +89,11 @@
     ├── Main.java
     └── .README.md
 
+## Demo video
+
+[Documentation](https://drive.google.com/file/d/1El-CV6G66DBznUGBlQVTFQBzruAPoQqu/view?google_abuse=GOOGLE_ABUSE_EXEMPTION%3DID%3Dd41034a73aef6fff:TM%3D1689324433:C%3Dr:IP%3D2405:201:9000:3873:f57e:1536:a221:3385-:S%3DLjoV8uLQTq3hUkXOOKAbkvk%3B+path%3D/%3B+domain%3Dgoogle.com%3B+expires%3DFri,+14-Jul-2023+11:47:13+GMT)
+
+
 
 ## Screenshots
 
@@ -117,13 +122,6 @@
 ![Putting Medicines to patient](https://raw.githubusercontent.com/Abhikr51/Core-Java-HMS/main/hms/screenshots/put-medicines.png)
 ---
 
-## Badges
-
-Add badges from somewhere like: [shields.io](https://shields.io/)
-
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
-[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
-[![AGPL License](https://img.shields.io/badge/license-AGPL-blue.svg)](http://www.gnu.org/licenses/agpl-3.0)
 
 
 ## 🚀 About Me
