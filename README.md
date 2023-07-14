@@ -76,3 +76,6 @@
     └── .README.md
 
 
+## Screenshots
+
+![Starting Panel](https://raw.githubusercontent.com/Abhikr51/Core-Java-HMS/main/hms/screenshots/Starting-Panel.png "Starting Panel")
